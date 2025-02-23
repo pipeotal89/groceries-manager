@@ -13,13 +13,14 @@ app.use(morgan("dev"));
 app.use(helmet());
 app.use(cors());
 
+connectToDB();
+
 app.use(express.json());
 
 //Routes
 
 app.use("/api/v1/categories", require("./routes/categories"));
 
-connectToDB();
 const port = process.env.PORT || 5000;
 app.listen(port, () => {
   /* eslint-disable no-console */
