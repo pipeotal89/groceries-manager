@@ -2,7 +2,7 @@ const express = require("express");
 var router = express.Router();
 const Category = require("../models/category");
 
-//getUser middleware
+//getUser Middleware
 async function getCategory(req, res, next) {
   let category;
   try {
