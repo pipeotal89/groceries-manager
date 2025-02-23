@@ -2,7 +2,7 @@ import { connect, set } from "mongoose";
 
 const DB_CONN_STRING = process.env.DB_CONN_STRING;
 
-// connection to db
+// connection to DB
 export const connectToDB = async () => {
   try {
     set("strictQuery", false);
