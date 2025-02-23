@@ -7,7 +7,7 @@
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "/src/apps.ts"
+            "dest": "/index.ts"
         }
     ]
 }
